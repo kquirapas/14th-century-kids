@@ -6,8 +6,6 @@ import reportWebVitals from "./reportWebVitals";
 import { GlobalStyle } from "./constants";
 import Home from "./pages/Home/Home";
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
@@ -15,11 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <GlobalStyle />
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-    </BrowserRouter>
+    <Home />
   </React.StrictMode>
 );
 
