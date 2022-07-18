@@ -1,0 +1,11 @@
+
+
+@font-face {
+  font-family: 'Deutsch';
+  src: url(/public/assets/fonts/Deutsch.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Futura';
+  src: url(/public/assets/fonts/Futura\ Bold.otf) format('opentype');
+}

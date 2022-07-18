@@ -1,17 +1,17 @@
-import { ReactNode } from "react";
+import { FC, ReactNode } from "react";
 import styled from "styled-components";
 
 type Props = {
   children?: ReactNode[] | ReactNode;
 };
 
-export default function Body({ children }: Props) {
+const Body: FC<Props> = ({ children }) => {
   return (
     <StyledMain>
       <StyledBody>{children}</StyledBody>
     </StyledMain>
   );
-}
+};
 
 const StyledMain = styled.main`
   display: flex;
@@ -25,3 +25,5 @@ const StyledBody = styled.div`
   width: 80vw;
   max-width: 900px;
 `;
+
+export default Body;
