@@ -13,7 +13,7 @@ const Colors = {
 
 const GlobalStyle = createGlobalStyle`
   * {
-    cursor: url("/assets/cursor/FROG CURSOR.png"), auto;
+    cursor: url("assets/cursor/FROG CURSOR.png"), auto;
     margin: 0;
     padding: 0;
   }
