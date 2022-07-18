@@ -116,6 +116,14 @@ function getFireflies(width: number, height: number) {
       x: 0.9 * width,
       y: 0.6 * height,
     },
+    {
+      x: 0.7 * width,
+      y: 0.8 * height,
+    },
+    {
+      x: 0.2 * width,
+      y: 0.73 * height,
+    },
   ];
 
   return FIREFLIES;

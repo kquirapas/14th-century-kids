@@ -24,10 +24,16 @@ const Welcome: FC = () => (
         <StyledText className="body-text-size">
           The kingdom is set for doom as the evil villain ‘The Regent’ has
           planned to overthrow the King & Queen. With the help of the rebels, he
-          was able to kidnap them and take his place on the throne. The village
-          is not happy with their King & Queen being gone, so the soldiers &
-          warriors set forth a plan to rescue their beloved King & Queen. In
-          order to fight The Regent & his Rebels they need the cadets in the
+          was able to kidnap them and take his place on the throne.{" "}
+        </StyledText>
+        <StyledText className="body-text-size">
+          {" "}
+          The village is not happy with their King & Queen being gone, so the
+          soldiers & warriors set forth a plan to rescue their beloved King &
+          Queen.
+        </StyledText>
+        <StyledText className="body-text-size">
+          In order to fight The Regent & his Rebels they need the cadets in the
           battle with them. As cadets we need you to help us save our King &
           Queen. Are you ready to save the kingdom? Join us now!
         </StyledText>
@@ -52,18 +58,18 @@ const StyledImage = styled.img`
 
 const StyledOffset = styled.div`
   position: relative;
-  top: -15%;
+  top: -10%;
 `;
 
 const StyledGrid = styled.div`
   display: flex;
   justify-content: center;
-  column-gap: 1em;
+  column-gap: 2em;
 
   img {
     border-radius: 1em;
     width: 100%;
-    max-width: 20%;
+    max-width: 30%;
   }
 `;
 
