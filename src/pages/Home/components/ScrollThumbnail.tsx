@@ -1,4 +1,4 @@
-import { FC, ReactNode, useState, useRef } from "react";
+import { FC, useRef } from "react";
 import styled from "styled-components";
 
 // constants
