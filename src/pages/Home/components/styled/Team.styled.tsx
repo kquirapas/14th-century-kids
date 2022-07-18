@@ -25,8 +25,8 @@ const StyledGrid = styled.div`
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  column-gap: 2em;
-  row-gap: 2em;
+  column-gap: 3em;
+  row-gap: 3em;
 `;
 
 export { StyledOffset, StyledGrid, StyledImage, StyledBanner, StyledWelcome };

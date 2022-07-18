@@ -84,8 +84,9 @@ const StyledImg = styled.img`
   transition: transform 0.1s linear;
 
   &:hover {
-    transform: translateY(-1em);
+    transform: scale(1.1);
     cursor: url("assets/cursor/FROG CURSOR b.png"), auto;
+    box-shadow: 2px -1px 94px -24px rgba(0, 0, 0, 1);
   }
 `;
 
@@ -95,7 +96,7 @@ const StyledContent = styled.div`
   left: 0;
   right: 0;
   top: 20%;
-  width: 40%;
+  width: 30%;
   position: absolute;
   display: flex;
   flex-direction: column;

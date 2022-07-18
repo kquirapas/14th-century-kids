@@ -3,7 +3,7 @@ import { createGlobalStyle } from "styled-components";
 const Colors = {
   WHITE: "#FFFFFF",
   BLACK: "#211715",
-  DIM: "rgba(0, 0, 0, 0.2)",
+  DIM: "rgba(0, 0, 0, 0.7)",
   LIGHTGREEN: "#5ed19d",
   DARKGREEN: "#4da189",
   BLUEGREEN: "#126b75",
