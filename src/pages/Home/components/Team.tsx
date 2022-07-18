@@ -20,7 +20,7 @@ const Team: FC = () => (
     <Body>
       <StyledBanner>
         <StyledImage
-          src="/assets/materials/BANNER 3_3.png"
+          src="assets/materials/BANNER 3_3.png"
           alt="Welcome Banner"
         />
       </StyledBanner>

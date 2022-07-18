@@ -25,7 +25,7 @@ const Navbar: FC = () => (
   <>
     <StyledNav>
       <StyledLogo
-        src="/assets/logo/14th CENTURY KIDS LOGO 3.png"
+        src="assets/logo/14th CENTURY KIDS LOGO 3.png"
         alt="14th Century Kids Logo"
       ></StyledLogo>
       <StyledRight>

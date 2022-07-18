@@ -12,14 +12,14 @@ const Welcome: FC = () => (
     <Body>
       <StyledBanner>
         <StyledImage
-          src="/assets/materials/BANNER 2_3.png"
+          src="assets/materials/BANNER 2_3.png"
           alt="Welcome Banner"
         />
       </StyledBanner>
       <StyledOffset>
         <StyledGrid>
-          <img src="/assets/king-and-queen/GHOST KING.png" alt="King" />
-          <img src="/assets/king-and-queen/QUEEN.png" alt="Queen" />
+          <img src="assets/king-and-queen/GHOST KING.png" alt="King" />
+          <img src="assets/king-and-queen/QUEEN.png" alt="Queen" />
         </StyledGrid>
         <StyledText className="body-text-size">
           The kingdom is set for doom as the evil villain ‘The Regent’ has

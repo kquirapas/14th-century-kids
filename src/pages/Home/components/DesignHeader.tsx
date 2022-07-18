@@ -9,7 +9,7 @@ import Navbar from "./Navbar";
 const DesignHeader: FC = () => (
   <StyledDesignHeader>
     <Navbar />
-    <StyledBackground src="/assets/materials/WBSITE MENU no bgb.png" />
+    <StyledBackground src="assets/materials/WBSITE MENU no bgb.png" />
     <StyledHeader>
       <span></span>
       <aside>

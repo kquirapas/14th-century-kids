@@ -31,7 +31,7 @@ const ScrollThumbnail: FC<Props> = ({
       <StyledImg onClick={toggle} src={imgPath} alt={`${name} Profile`} />
       <StyledOverlay ref={scrollRef}>
         <StyledScroll>
-          <img src="/assets/materials/SCROLL 3_3.png" alt="Scroll Paper" />
+          <img src="assets/materials/SCROLL 3_3.png" alt="Scroll Paper" />
           <StyledContent>
             <h1>{name}</h1>
             <img src={imgPath} alt={`${name} Profile`} />
@@ -85,7 +85,7 @@ const StyledImg = styled.img`
 
   &:hover {
     transform: translateY(-1em);
-    cursor: url("/assets/cursor/FROG CURSOR b.png"), auto;
+    cursor: url("assets/cursor/FROG CURSOR b.png"), auto;
   }
 `;
 
@@ -136,7 +136,7 @@ const StyledClose = styled.span`
   font-size: 1.5vh;
 
   &:hover {
-    cursor: url("/assets/cursor/FROG CURSOR b.png"), auto;
+    cursor: url("assets/cursor/FROG CURSOR b.png"), auto;
   }
 `;
 
