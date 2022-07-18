@@ -29,4 +29,26 @@ const StyledGrid = styled.div`
   row-gap: 3em;
 `;
 
-export { StyledOffset, StyledGrid, StyledImage, StyledBanner, StyledWelcome };
+const StyledSection = styled.section`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+`;
+
+const StyledGhost = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  img {
+    height: 50vh;
+  }
+`;
+
+export {
+  StyledOffset,
+  StyledGrid,
+  StyledImage,
+  StyledBanner,
+  StyledSection,
+  StyledWelcome,
+  StyledGhost,
+};

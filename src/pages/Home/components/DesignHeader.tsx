@@ -1,5 +1,8 @@
 import { FC, useState } from "react";
 
+// constants, utils
+import { getRandomInteger } from "../../../utils";
+
 // generic components
 import Firefly from "../../../components/Firefly";
 import {
@@ -56,10 +59,6 @@ const DesignHeader: FC = () => {
     </StyledDesignHeader>
   );
 };
-
-function getRandomInteger(min: number, max: number) {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
 
 interface Coordinate {
   x: number;
