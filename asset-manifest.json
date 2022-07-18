@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/14th-century-kids/static/css/main.31d6cfe0.css",
+    "main.js": "/14th-century-kids/static/js/main.e430ae15.js",
+    "static/js/787.fa13a054.chunk.js": "/14th-century-kids/static/js/787.fa13a054.chunk.js",
+    "index.html": "/14th-century-kids/index.html",
+    "main.e430ae15.js.map": "/14th-century-kids/static/js/main.e430ae15.js.map",
+    "787.fa13a054.chunk.js.map": "/14th-century-kids/static/js/787.fa13a054.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31d6cfe0.css",
+    "static/js/main.e430ae15.js"
+  ]
+}
