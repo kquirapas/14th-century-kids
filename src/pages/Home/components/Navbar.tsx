@@ -88,7 +88,11 @@ const Navbar: FC = () => {
           />
           {NAVIGATIONS.map((e, idx) => (
             <AnchorLink key={idx} anchor={e.url} target={e.target}>
-              {<span className="nav-text-size">{e.name}</span>}
+              {
+                <span onClick={toggleMobileNav} className="nav-text-size">
+                  {e.name}
+                </span>
+              }
             </AnchorLink>
           ))}
         </StyledMobileLinks>

@@ -29,6 +29,7 @@ const StyledOffset = styled.div`
 `;
 
 const StyledGrid = styled.div`
+  z-index: 2;
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -60,6 +61,7 @@ const StyledSection = styled.section`
 `;
 
 const StyledGhost = styled.div`
+  z-index: 1;
   width: 100%;
   position: absolute;
 

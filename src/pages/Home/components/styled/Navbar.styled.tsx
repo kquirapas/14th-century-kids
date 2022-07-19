@@ -5,7 +5,7 @@ import { Colors } from "../../../../constants";
 
 // Desktop Navbar
 const StyledNav = styled.nav`
-  z-index: 1;
+  z-index: 3;
   width: 100%;
   position: absolute;
   top: 0;
@@ -34,7 +34,7 @@ const StyledRight = styled.div`
 
 // Mobile Navbar
 const StyledMobileNav = styled.nav`
-  z-index: 1;
+  z-index: 3;
   height: 10vh;
   width: 100%;
   position: absolute;
