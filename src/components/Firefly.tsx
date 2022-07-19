@@ -35,7 +35,6 @@ const Firefly: FC<Props> = ({ delay, intensity, duration, size, x, y }) => {
 
 const StyledHolder = styled.div<{ left: number; top: number }>`
   position: absolute;
-  z-index: 1;
   top: ${({ top }) => top}px;
   left: ${({ left }) => left}px;
 `;

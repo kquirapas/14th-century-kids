@@ -19,8 +19,8 @@ const StyledSection = styled.section`
 `;
 
 const StyledCloud = styled.div`
-  width: 100%;
   z-index: 0;
+  width: 100%;
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -60,7 +60,6 @@ const StyledOffset = styled.div`
 `;
 
 const StyledGrid = styled.div`
-  z-index: 1;
   display: grid;
   column-gap: 1em;
   row-gap: 1em;
@@ -68,7 +67,7 @@ const StyledGrid = styled.div`
   grid-template-columns: 1fr 1fr;
 
   img {
-    z-index: 1;
+    z-index: 2;
     border-radius: 1em;
     width: 100%;
   }

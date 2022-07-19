@@ -20,7 +20,6 @@ const StyledDesignHeader = styled.div`
 `;
 
 const StyledBackground = styled.img`
-  z-index: 0;
   width: 100%;
   min-width: 1080px;
 `;
@@ -29,7 +28,6 @@ const StyledHeader = styled.header`
   height: 100vh;
   position: absolute;
   top: 0;
-  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
 

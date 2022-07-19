@@ -5,7 +5,7 @@ import { Colors } from "../../../../constants";
 
 const StyledHolder = styled.div`
   .overlay-open {
-    z-index: 1000;
+    z-index: 10;
     opacity: 1;
   }
 
@@ -16,8 +16,8 @@ const StyledHolder = styled.div`
 `;
 
 const StyledOverlay = styled.main`
-  height: 100vh;
   z-index: -1;
+  height: 100vh;
   opacity: 0;
   display: flex;
   position: fixed;
@@ -32,7 +32,6 @@ const StyledOverlay = styled.main`
 const StyledScroll = styled.div`
   height: 0;
   display: flex;
-  z-index: 15;
   justify-content: center;
   position: relative;
   box-sizing: border-box;
@@ -55,6 +54,7 @@ const StyledScroll = styled.div`
 `;
 
 const StyledImg = styled.img`
+  z-index: 2;
   border-radius: 100%;
   width: 100%;
 

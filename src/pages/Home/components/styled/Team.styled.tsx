@@ -6,12 +6,9 @@ const StyledTeam = styled.section`
   align-items: center;
 `;
 
-const StyledBanner = styled.div`
-  z-index: 1;
-`;
+const StyledBanner = styled.div``;
 
 const StyledImage = styled.img`
-  z-index: 0;
   box-sizing: border-box;
   width: 100%;
 `;
@@ -32,7 +29,6 @@ const StyledOffset = styled.div`
 `;
 
 const StyledGrid = styled.div`
-  z-index: 1;
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -64,7 +60,6 @@ const StyledSection = styled.section`
 `;
 
 const StyledGhost = styled.div`
-  z-index: 0;
   width: 100%;
   position: absolute;
 
