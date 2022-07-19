@@ -17,7 +17,7 @@ const StyledAnchor = styled.a`
   margin: 0;
 
   & > *:hover {
-    cursor: url("assets/cursor/FROG CURSOR b.png"), auto;
+    cursor: url("assets/cursor/32x32 FROG CURSOR b.png"), auto;
   }
 `;
 

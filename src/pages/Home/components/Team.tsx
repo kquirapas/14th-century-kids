@@ -16,31 +16,31 @@ import {
   StyledGrid,
   StyledImage,
   StyledBanner,
-  StyledWelcome,
+  StyledTeam,
   StyledSection,
   StyledGhost,
 } from "./styled/Team.styled";
 
-const GHOST_INTENSITY = 3;
-const GHOST_DURATION = 5;
+const GHOST_INTENSITY = 10;
+const GHOST_DURATION = 10;
 
 const Team: FC = () => (
-  <StyledWelcome>
+  <StyledTeam>
     <StyledSection>
-      <StyledGhost>
-        <Floater
-          delay={getRandomInteger(1, 5)}
-          intensity={GHOST_INTENSITY}
-          duration={GHOST_DURATION}
-        >
-          <img src="assets/floaties/GHOST.png" alt="Cloud" />
-        </Floater>
-      </StyledGhost>
       <Body>
+        <StyledGhost id="left-ghost">
+          <Floater
+            delay={getRandomInteger(1, 5)}
+            intensity={GHOST_INTENSITY}
+            duration={GHOST_DURATION}
+          >
+            <img src="assets/floaties/GHOST.png" alt="Cloud" />
+          </Floater>
+        </StyledGhost>
         <StyledBanner>
           <StyledImage
-            src="/assets/materials/BANNER 3_3.png"
-            alt="Welcome Banner"
+            src="assets/materials/BANNER 3_3.png"
+            alt="Team Banner"
           />
         </StyledBanner>
         <StyledOffset>
@@ -56,18 +56,18 @@ const Team: FC = () => (
             ))}
           </StyledGrid>
         </StyledOffset>
+        <StyledGhost id="right-ghost">
+          <Floater
+            delay={getRandomInteger(1, 5)}
+            intensity={GHOST_INTENSITY}
+            duration={GHOST_DURATION}
+          >
+            <img src="assets/floaties/GHOST 2.png" alt="Cloud" />
+          </Floater>
+        </StyledGhost>{" "}
       </Body>
-      <StyledGhost>
-        <Floater
-          delay={getRandomInteger(1, 5)}
-          intensity={GHOST_INTENSITY}
-          duration={GHOST_DURATION}
-        >
-          <img src="assets/floaties/GHOST 2.png" alt="Cloud" />
-        </Floater>
-      </StyledGhost>
     </StyledSection>
-  </StyledWelcome>
+  </StyledTeam>
 );
 
 export default Team;

@@ -43,7 +43,7 @@ const StyledImg = styled.img`
 
   &:hover {
     transform: scale(1.1);
-    cursor: url("assets/cursor/FROG CURSOR b.png"), auto;
+    cursor: url("assets/cursor/32x32 FROG CURSOR b.png"), auto;
     box-shadow: 2px -1px 94px -24px rgba(0, 0, 0, 1);
   }
 `;
@@ -84,6 +84,14 @@ const StyledContent = styled.div`
     font-family: Futura;
     color: ${Colors.BLUEGREEN};
   }
+
+  @media only screen and (max-width: 768px) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    width: 70%;
+  }
 `;
 
 const StyledClose = styled.span`
@@ -95,7 +103,7 @@ const StyledClose = styled.span`
   font-size: 1.5vh;
 
   &:hover {
-    cursor: url("assets/cursor/FROG CURSOR b.png"), auto;
+    cursor: url("assets/cursor/32x32 FROG CURSOR b.png"), auto;
   }
 `;
 

@@ -18,22 +18,22 @@ import {
   StyledWelcome,
 } from "./styled/Welcome.styled";
 
-const CLOUD_INTENSITY = 5;
+const CLOUD_INTENSITY = 10;
 const CLOUD_DURATION = 5;
 
 const Welcome: FC = () => (
   <StyledWelcome>
     <StyledSection>
-      <StyledCloud>
-        <Floater
-          delay={getRandomInteger(1, 5)}
-          intensity={CLOUD_INTENSITY}
-          duration={CLOUD_DURATION}
-        >
-          <img src="assets/floaties/CLOUD 1.png" alt="Cloud" />
-        </Floater>
-      </StyledCloud>
       <Body>
+        <StyledCloud id="left-cloud">
+          <Floater
+            delay={getRandomInteger(1, 5)}
+            intensity={CLOUD_INTENSITY}
+            duration={CLOUD_DURATION}
+          >
+            <img src="assets/floaties/CLOUD 1.png" alt="Cloud" />
+          </Floater>
+        </StyledCloud>
         <StyledBanner>
           <StyledImage
             src="assets/materials/BANNER 2_3.png"
@@ -62,16 +62,16 @@ const Welcome: FC = () => (
             & Queen. Are you ready to save the kingdom? Join us now!
           </StyledText>
         </StyledOffset>
+        <StyledCloud id="right-cloud">
+          <Floater
+            delay={getRandomInteger(1, 5)}
+            intensity={CLOUD_INTENSITY}
+            duration={CLOUD_DURATION}
+          >
+            <img src="assets/floaties/CLOUD 2.png" alt="Cloud" />
+          </Floater>
+        </StyledCloud>
       </Body>
-      <StyledCloud>
-        <Floater
-          delay={getRandomInteger(1, 5)}
-          intensity={CLOUD_INTENSITY}
-          duration={CLOUD_DURATION}
-        >
-          <img src="assets/floaties/CLOUD 2.png" alt="Cloud" />
-        </Floater>
-      </StyledCloud>
     </StyledSection>
   </StyledWelcome>
 );

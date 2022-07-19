@@ -1,16 +1,18 @@
 import styled from "styled-components";
 
-const StyledWelcome = styled.section`
+const StyledTeam = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
 `;
 
-const StyledBanner = styled.div``;
+const StyledBanner = styled.div`
+  z-index: 1;
+`;
 
 const StyledImage = styled.img`
+  z-index: 0;
   box-sizing: border-box;
-  padding: 2em;
   width: 100%;
 `;
 
@@ -19,27 +21,58 @@ const StyledOffset = styled.div`
   justify-content: center;
   position: relative;
   top: -15%;
+
+  @media only screen and (max-width: 768px) {
+    top: -10%;
+  }
+
+  @media only screen and (max-width: 480px) {
+    top: 0;
+  }
 `;
 
 const StyledGrid = styled.div`
+  z-index: 1;
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 3em;
   row-gap: 3em;
+
+  @media only screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media only screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
 `;
 
 const StyledSection = styled.section`
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  max-width: 100vw;
+
+  #left-ghost {
+    top: 40vh;
+    left: -40vw;
+  }
+
+  #right-ghost {
+    top: 40vh;
+    left: 40vw;
+  }
 `;
 
 const StyledGhost = styled.div`
+  z-index: 0;
+  width: 100%;
+  position: absolute;
+
   display: flex;
-  flex-direction: column;
   justify-content: center;
+
   img {
-    height: 50vh;
+    width: 20vw;
   }
 `;
 
@@ -49,6 +82,6 @@ export {
   StyledImage,
   StyledBanner,
   StyledSection,
-  StyledWelcome,
+  StyledTeam,
   StyledGhost,
 };

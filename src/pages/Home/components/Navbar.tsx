@@ -1,12 +1,18 @@
 // package imports
-import { FC } from "react";
-import styled from "styled-components";
-
-// constants
-import { Colors } from "../../../constants";
+import { FC, useRef } from "react";
 
 // generic components
 import AnchorLink from "../../../components/AnchorLink";
+import Icon from "../../../components/Icon";
+
+import {
+  StyledNav,
+  StyledLogo,
+  StyledRight,
+  StyledMobileNav,
+  StyledMobileLinks,
+  StyledMobileHeading,
+} from "./styled/Navbar.styled";
 
 // domain components
 
@@ -21,46 +27,56 @@ const NAVIGATIONS = {
 
 type NavKeys = keyof typeof NAVIGATIONS;
 
-const Navbar: FC = () => (
-  <>
-    <StyledNav>
-      <StyledLogo
-        src="assets/logo/14th CENTURY KIDS LOGO 3.png"
-        alt="14th Century Kids Logo"
-      ></StyledLogo>
-      <StyledRight>
-        {Object.keys(NAVIGATIONS).map((e, idx) => (
-          <AnchorLink key={idx} anchor={NAVIGATIONS[e as NavKeys]}>
-            {<span className="nav-text-size">{e}</span>}
-          </AnchorLink>
-        ))}
-      </StyledRight>
-    </StyledNav>
-  </>
-);
+const Navbar: FC = () => {
+  const mobileNavRef = useRef<HTMLDivElement>(null);
 
-const StyledNav = styled.nav`
-  z-index: 10;
-  width: 100%;
-  position: absolute;
-  top: 0;
-  box-sizing: border-box;
-  padding: 1em 2em;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-`;
+  const toggleMobileNav = () => {
+    if (mobileNavRef.current) {
+      console.log("toggle");
+      mobileNavRef.current.classList.toggle("open-mobile-nav");
+    }
+  };
 
-const StyledLogo = styled.img`
-  width: 15em;
-`;
+  return (
+    <>
+      <StyledNav>
+        <StyledLogo
+          src="assets/logo/14th CENTURY KIDS LOGO 3.png"
+          alt="14th Century Kids Logo"
+        />
+        <StyledRight>
+          {Object.keys(NAVIGATIONS).map((e, idx) => (
+            <AnchorLink key={idx} anchor={NAVIGATIONS[e as NavKeys]}>
+              {<span className="nav-text-size">{e}</span>}
+            </AnchorLink>
+          ))}
+        </StyledRight>
+      </StyledNav>
 
-const StyledRight = styled.div`
-  span {
-    margin-left: 2em;
-    color: ${Colors.WHITE};
-    font-family: Futura;
-  }
-`;
+      <StyledMobileNav>
+        <StyledMobileHeading>
+          <img
+            src="assets/logo/14th CENTURY KIDS LOGO 3.png"
+            alt="14th Century Kids Logo"
+          />
+          <span onClick={toggleMobileNav}>
+            <Icon symbol="menu" size={2} />
+          </span>
+        </StyledMobileHeading>
+        <StyledMobileLinks ref={mobileNavRef}>
+          <img
+            src="assets/logo/14th CENTURY KIDS LOGO 3.png"
+            alt="14th Century Kids Logo"
+          />
+          {Object.keys(NAVIGATIONS).map((e, idx) => (
+            <AnchorLink key={idx} anchor={NAVIGATIONS[e as NavKeys]}>
+              {<span className="nav-text-size">{e}</span>}
+            </AnchorLink>
+          ))}
+        </StyledMobileLinks>
+      </StyledMobileNav>
+    </>
+  );
+};
 
 export default Navbar;

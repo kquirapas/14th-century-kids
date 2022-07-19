@@ -21,7 +21,6 @@ const DesignHeader: FC = () => {
 
   const setDimensions = (element: HTMLDivElement) => {
     if (element) {
-      console.log(element.clientWidth, element.clientHeight);
       setHeaderWidth(element.clientWidth);
       setHeaderHeight(element.clientHeight);
       setLoading(false);
