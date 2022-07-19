@@ -4,23 +4,25 @@ import styled from "styled-components";
 import { Colors } from "../../../../constants";
 
 const StyledHolder = styled.div`
-  .scroll-open {
+  .overlay-open {
+    z-index: 1000;
     opacity: 1;
-    visibility: visible;
-    display: flex;
+  }
+
+  .scroll-open {
+    height: 100vh;
+    opacity: 1;
   }
 `;
 
 const StyledOverlay = styled.main`
-  display: none;
+  height: 100vh;
+  z-index: -1;
   opacity: 0;
-  visibility: hidden;
-  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
-
+  display: flex;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1000;
   align-items: center;
   justify-content: center;
   background-color: ${Colors.DIM};
@@ -28,14 +30,18 @@ const StyledOverlay = styled.main`
 `;
 
 const StyledScroll = styled.div`
-  z-index: 15;
+  height: 0;
   display: flex;
+  z-index: 15;
   justify-content: center;
   position: relative;
   box-sizing: border-box;
-  height: 100vh;
   width: 100%;
   max-width: 900px;
+
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
 
   img {
     height: 100%;

@@ -22,11 +22,13 @@ const ScrollThumbnail: FC<Props> = ({
   position,
   description,
 }) => {
-  const scrollRef = useRef<HTMLElement>(null);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const overlayRef = useRef<HTMLElement>(null);
 
   const toggle = () => {
-    if (scrollRef.current) {
+    if (overlayRef.current && scrollRef.current) {
       console.log("open");
+      overlayRef.current.classList.toggle("overlay-open");
       scrollRef.current.classList.toggle("scroll-open");
     }
   };
@@ -34,8 +36,8 @@ const ScrollThumbnail: FC<Props> = ({
   return (
     <StyledHolder>
       <StyledImg onClick={toggle} src={imgPath} alt={`${name} Profile`} />
-      <StyledOverlay ref={scrollRef}>
-        <StyledScroll>
+      <StyledOverlay ref={overlayRef}>
+        <StyledScroll ref={scrollRef}>
           <img src="assets/materials/SCROLL 3_3.png" alt="Scroll Paper" />
           <StyledContent>
             <h1>{name}</h1>

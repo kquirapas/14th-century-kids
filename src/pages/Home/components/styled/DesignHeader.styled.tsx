@@ -13,7 +13,7 @@ const StyledLoading = styled.div`
 
 const StyledDesignHeader = styled.div`
   position: relative;
-  overflow: hidden;
+  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
