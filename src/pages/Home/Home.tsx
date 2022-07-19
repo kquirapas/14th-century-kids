@@ -21,7 +21,7 @@ const Home: FC = () => (
     <Section anchor="team">
       <Team />
     </Section>
-    <Section anchor="Faqs">
+    <Section anchor="faqs">
       <Faqs />
     </Section>
     <Spacer size={10} />

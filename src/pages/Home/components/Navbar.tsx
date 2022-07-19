@@ -20,7 +20,7 @@ import {
 const NAVIGATIONS = {
   TEAM: "#team",
   OPENSEA: "#",
-  FAQ: "#",
+  FAQ: "#faqs",
   TWITTER: "https://twitter.com/14thcenturykids?s=20&t=HnZsZ_VPHqF244Dvu7r0Qg",
   DISCORD: "https://discord.gg/MHfs6tBa2d",
 };
