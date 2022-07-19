@@ -5,18 +5,19 @@ import { Colors } from "../../../../constants";
 
 const StyledHolder = styled.div`
   .overlay-open {
-    z-index: 10;
+    z-index: 8;
     opacity: 1;
   }
 
   .scroll-open {
+    z-index: 8;
     height: 100vh;
     opacity: 1;
   }
 `;
 
 const StyledOverlay = styled.main`
-  z-index: -1;
+  z-index: 1;
   height: 100vh;
   opacity: 0;
   display: flex;
@@ -54,6 +55,7 @@ const StyledScroll = styled.div`
 `;
 
 const StyledImg = styled.img`
+  position: relative;
   z-index: 2;
   border-radius: 100%;
   width: 100%;

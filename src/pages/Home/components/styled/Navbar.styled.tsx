@@ -34,7 +34,7 @@ const StyledRight = styled.div`
 
 // Mobile Navbar
 const StyledMobileNav = styled.nav`
-  z-index: 3;
+  z-index: 10;
   height: 10vh;
   width: 100%;
   position: absolute;

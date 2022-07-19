@@ -29,7 +29,7 @@ const StyledOffset = styled.div`
 `;
 
 const StyledGrid = styled.div`
-  z-index: 2;
+  position: relative;
   width: 80%;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
