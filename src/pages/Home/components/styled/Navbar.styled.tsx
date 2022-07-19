@@ -56,12 +56,12 @@ const StyledMobileHeading = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 2em;
+  padding: 0 1em;
   height: 100%;
   box-sizing: border-box;
 
   img {
-    height: 100%;
+    height: 10vh;
   }
 `;
 

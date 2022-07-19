@@ -12,6 +12,8 @@ const StyledLoading = styled.div`
 `;
 
 const StyledDesignHeader = styled.div`
+  position: relative;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,7 +29,7 @@ const StyledHeader = styled.header`
   height: 100vh;
   position: absolute;
   top: 0;
-  z-index: 2;
+  z-index: 1;
   display: grid;
   grid-template-columns: 1fr 1fr;
 

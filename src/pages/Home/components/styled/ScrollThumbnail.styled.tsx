@@ -22,6 +22,7 @@ const StyledOverlay = styled.main`
 `;
 
 const StyledScroll = styled.div`
+  z-index: 15;
   display: flex;
   justify-content: center;
   position: relative;
