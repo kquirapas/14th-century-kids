@@ -17,13 +17,33 @@ import {
 // domain components
 
 // Text : Anchor
-const NAVIGATIONS = {
-  TEAM: "#team",
-  OPENSEA: "#",
-  FAQ: "#faqs",
-  TWITTER: "https://twitter.com/14thcenturykids?s=20&t=HnZsZ_VPHqF244Dvu7r0Qg",
-  DISCORD: "https://discord.gg/MHfs6tBa2d",
-};
+const NAVIGATIONS = [
+  {
+    name: "TEAM",
+    url: "#team",
+    target: "_self",
+  },
+  {
+    name: "OPENSEA",
+    url: "#",
+    target: "_self",
+  },
+  {
+    name: "FAQS",
+    url: "#faqs",
+    target: "_self",
+  },
+  {
+    name: "TWITTER",
+    url: "https://twitter.com/14thcenturykids?s=20&t=HnZsZ_VPHqF244Dvu7r0Qg",
+    target: "_blank",
+  },
+  {
+    name: "DISCORD",
+    url: "https://discord.gg/MHfs6tBa2d",
+    target: "_blank",
+  },
+];
 
 type NavKeys = keyof typeof NAVIGATIONS;
 
@@ -45,9 +65,9 @@ const Navbar: FC = () => {
           alt="14th Century Kids Logo"
         />
         <StyledRight>
-          {Object.keys(NAVIGATIONS).map((e, idx) => (
-            <AnchorLink key={idx} anchor={NAVIGATIONS[e as NavKeys]}>
-              {<span className="nav-text-size">{e}</span>}
+          {NAVIGATIONS.map((e, idx) => (
+            <AnchorLink key={idx} anchor={e.url} target={e.target}>
+              {<span className="nav-text-size">{e.name}</span>}
             </AnchorLink>
           ))}
         </StyledRight>
@@ -68,9 +88,9 @@ const Navbar: FC = () => {
             src="assets/logo/14th CENTURY KIDS LOGO 3.png"
             alt="14th Century Kids Logo"
           />
-          {Object.keys(NAVIGATIONS).map((e, idx) => (
-            <AnchorLink key={idx} anchor={NAVIGATIONS[e as NavKeys]}>
-              {<span className="nav-text-size">{e}</span>}
+          {NAVIGATIONS.map((e, idx) => (
+            <AnchorLink key={idx} anchor={e.url} target={e.target}>
+              {<span className="nav-text-size">{e.name}</span>}
             </AnchorLink>
           ))}
         </StyledMobileLinks>
