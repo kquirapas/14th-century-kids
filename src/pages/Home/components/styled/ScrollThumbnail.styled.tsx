@@ -5,12 +5,18 @@ import { Colors } from "../../../../constants";
 
 const StyledHolder = styled.div`
   .scroll-open {
+    opacity: 1;
+    visibility: visible;
     display: flex;
   }
 `;
 
 const StyledOverlay = styled.main`
   display: none;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
+
   position: fixed;
   top: 0;
   left: 0;
@@ -34,6 +40,12 @@ const StyledScroll = styled.div`
   img {
     height: 100%;
   }
+
+  @media only screen and (max-width: 768px) {
+    img {
+      height: 80%;
+    }
+  }
 `;
 
 const StyledImg = styled.img`
@@ -50,13 +62,13 @@ const StyledImg = styled.img`
 `;
 
 const StyledContent = styled.div`
+  position: absolute;
   margin-right: auto;
   margin-left: auto;
   left: 0;
   right: 0;
   top: 20%;
   width: 30%;
-  position: absolute;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -69,10 +81,12 @@ const StyledContent = styled.div`
   }
 
   img {
-    height: 30vh;
+    border-radius: 100%;
+    height: 25vh;
   }
 
   h2 {
+    margin-top: 1em;
     font-size: 3vh;
     font-family: Deutsch;
     color: ${Colors.BLUEGREEN};
@@ -88,10 +102,16 @@ const StyledContent = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 50%;
+    top: 15%;
+
+    img {
+      border-radius: 100%;
+      height: 15vh;
+    }
   }
 
   @media only screen and (max-width: 480px) {
-    width: 70%;
+    width: 60%;
   }
 `;
 
