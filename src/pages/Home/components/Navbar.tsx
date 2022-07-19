@@ -45,8 +45,6 @@ const NAVIGATIONS = [
   },
 ];
 
-type NavKeys = keyof typeof NAVIGATIONS;
-
 const Navbar: FC = () => {
   const mobileNavRef = useRef<HTMLDivElement>(null);
 
