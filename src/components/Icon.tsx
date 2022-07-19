@@ -1,22 +1,26 @@
 import { FC } from "react";
 import styled from "styled-components";
 
-// constants
-import { Colors } from "../constants";
-
 type Props = {
   symbol: string;
   size: number;
+  color?: string;
 };
 
-const Icon: FC<Props> = ({ symbol, size }) => (
-  <StyledSpan fontSize={size} className="material-symbols-rounded">
+const DEFAULT_COLOR = "#FFFFFF";
+
+const Icon: FC<Props> = ({ symbol, size, color }) => (
+  <StyledSpan
+    color={color ? color : DEFAULT_COLOR}
+    fontSize={size}
+    className="material-symbols-rounded"
+  >
     {symbol}
   </StyledSpan>
 );
 
-const StyledSpan = styled.span<{ fontSize: number }>`
-  color: ${Colors.WHITE};
+const StyledSpan = styled.span<{ fontSize: number; color: string }>`
+  color: ${({ color }) => color};
   font-size: ${({ fontSize }) => fontSize}em;
 `;
 

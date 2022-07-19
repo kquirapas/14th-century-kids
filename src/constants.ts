@@ -19,6 +19,7 @@ const Colors = {
 
 // @media only screen and (max-width: 1200px) {
 // }
+//
 // @media only screen and (max-width: 896px) {
 // }
 //

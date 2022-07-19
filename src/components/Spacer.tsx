@@ -11,5 +11,6 @@ export default function Spacer({ size }: Props) {
 }
 
 const StyledSpacer = styled.span<{ sizing: number }>`
+  display: block;
   height: ${({ sizing }) => sizing}em;
 `;
