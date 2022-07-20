@@ -9,6 +9,7 @@ import DesignHeader from "./components/DesignHeader";
 import Welcome from "./components/Welcome";
 import Team from "./components/Team";
 import Faqs from "./components/Faqs";
+import Footer from "./components/Footer";
 
 const Home: FC = () => (
   <>

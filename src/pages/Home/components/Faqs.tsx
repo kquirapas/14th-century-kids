@@ -23,7 +23,11 @@ const FAQS = [
     body: (
       <p>
         Through our official partner{" "}
-        <a href="https://whop.com/?fbclid=IwAR3USO__OboPodM0VuSzHpbXWDNR4K-MZLkVfYw6VoFIRGpIM-pjPRb47X8">
+        <a
+          href="https://whop.com/?fbclid=IwAR3USO__OboPodM0VuSzHpbXWDNR4K-MZLkVfYw6VoFIRGpIM-pjPRb47X8"
+          target="_blank"
+          rel="noreferrer noopener"
+        >
           Whop.com
         </a>
       </p>

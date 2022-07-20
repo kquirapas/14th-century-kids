@@ -6,13 +6,19 @@
 
 # Website Preview
 
-<a href="https://kquirapas.github.io/14th-century-kids/" alt="Website Preview Link">Website Preview</a>
+<a href="https://kquirapas.github.io/14th-century-kids/" target="_blank">Website Preview</a>
 
 # Developer
 <a href="https://github.com/kquirapas/14th-century-kids/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=kquirapas/14th-century-kids" />
+  <img src="https://contrib.rocks/image?repo=kquirapas/14th-century-kids" alt="14th Century Kids Art"/>
 </a>
 
 # Artist
 
-Timmie
+<a href="https://www.pixiv.net/en/users/61418278" target="_blank">
+	<img width="200px" src="public/assets/profiles/STIMM.png" alt="Artist Avatar">
+</a>
+
+<a href="https://www.pixiv.net/en/users/61418278" target="_blank">
+	<p>Timmie the Illustrator</p>
+</a>
