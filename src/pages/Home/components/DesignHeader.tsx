@@ -12,7 +12,7 @@ import {
 } from "./styled/DesignHeader.styled";
 
 // domain
-import Navbar from "./Navbar";
+import Navbar from "../../../components/Navbar";
 
 const DesignHeader: FC = () => {
   const [loading, setLoading] = useState(true);

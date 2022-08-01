@@ -56,12 +56,18 @@ const Faqs: FC = () => {
 
       <Spacer size={1} />
 
-      {FAQS.map((t, idx) => (
-        <Toggle key={idx} text={t.text} body={t.body} />
-      ))}
+      <StyledWrapper>
+        {FAQS.map((t, idx) => (
+          <Toggle key={idx} text={t.text} body={t.body} />
+        ))}
+      </StyledWrapper>
     </Body>
   );
 };
+
+const StyledWrapper = styled.div`
+  z-index: 1;
+`;
 
 const StyledSectionHeader = styled.h1`
   text-align: center;

@@ -45,7 +45,6 @@ const Toggle: FC<Props> = ({ text, body }) => {
 };
 
 const StyledToggle = styled.div`
-  z-index: 3;
   position: relative;
   width: 100%;
 
