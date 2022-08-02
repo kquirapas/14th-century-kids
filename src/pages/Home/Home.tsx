@@ -3,7 +3,6 @@ import { FC } from "react";
 // generic components
 import Section from "../../components/Section";
 import Spacer from "../../components/Spacer";
-
 // domain
 import DesignHeader from "./components/DesignHeader";
 import Welcome from "./components/Welcome";
