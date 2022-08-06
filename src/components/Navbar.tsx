@@ -4,7 +4,6 @@ import { FC, useRef } from "react";
 // generic components
 import AnchorLink from "./AnchorLink";
 import Icon from "./Icon";
-import VerifyButton from "./VerifyButton";
 
 import {
   StyledNav,
@@ -64,7 +63,6 @@ const Navbar: FC = () => {
           alt="14th Century Kids Logo"
         />
         <StyledRight>
-          <VerifyButton text="VERIFY" />
           {NAVIGATIONS.map((e, idx) => (
             <AnchorLink key={idx} anchor={e.url} target={e.target}>
               {<span className="nav-text-size">{e.name}</span>}
@@ -97,7 +95,6 @@ const Navbar: FC = () => {
               }
             </AnchorLink>
           ))}
-          <VerifyButton text="VERIFY" />
         </StyledMobileLinks>
       </StyledMobileNav>
     </>
