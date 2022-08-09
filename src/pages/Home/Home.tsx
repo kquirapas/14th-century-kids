@@ -9,6 +9,7 @@ import DesignHeader from "./components/DesignHeader";
 import Welcome from "./components/Welcome";
 import Team from "./components/Team";
 import Faqs from "./components/Faqs";
+import Roadmap from "./components/Roadmap";
 
 const Home: FC = () => (
   <>
@@ -24,6 +25,10 @@ const Home: FC = () => (
     <Spacer size={5} />
     <Section anchor="faqs">
       <Faqs />
+    </Section>
+    <Spacer size={10} />
+    <Section anchor="roadmap">
+      <Roadmap />
     </Section>
     <Spacer size={10} />
   </>
